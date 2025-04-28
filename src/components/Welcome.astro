@@ -1,81 +1,303 @@
 ---
-import astroLogo from '../assets/astro.svg';
-import background from '../assets/background.svg';
+import buxrailLogo from '../assets/logotipo.svg';
+import bg from '../assets/bg.svg';
+import appstore from '../assets/appstore_en.svg';
+import playstore from '../assets/playstore_en.png';
+import multicy from '../assets/multi-city.svg';
+import cashless from '../assets/cashless-payments.svg';
+import universal from '../assets/universal-language.svg';
+import microcredits from '../assets/microcredits.svg';
+import img1 from '../assets/img1.png';
+import arrowdown from '../assets/arrowdown.svg';
+import phoneDemo from '../assets/iphone.svg';
+import local from '../assets/local.svg';
+import own from '../assets/own.svg';
+import scooter from '../assets/scooter.svg';
+import track from '../assets/track.svg';
+import facebook from '../assets/facebook.svg';
+import instagram from '../assets/instagram.svg';
+import linkedin from '../assets/linkedin.svg';
+import tiktok from '../assets/tiktok.svg';		
+import x from '../assets/x.svg';
+import youtube from '../assets/youtube.svg';
+
+
 ---
 
 <div id="container">
-	<img id="background" src={background.src} alt="" fetchpriority="high" />
+	<img id="bg" src={bg.src} alt="" fetchpriority="high" /> 
 	<main>
-		<section id="hero">
-			<a href="https://astro.build"
-				><img src={astroLogo.src} width="115" height="48" alt="Astro Homepage" /></a
-			>
-			<h1>
-				To get started, open the <code><pre>src/pages</pre></code> directory in your project.
-			</h1>
-			<section id="links">
-				<a class="button" href="https://docs.astro.build">Read our docs</a>
-				<a href="https://astro.build/chat"
-					>Join our Discord <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36"
-						><path
-							fill="currentColor"
-							d="M107.7 8.07A105.15 105.15 0 0 0 81.47 0a72.06 72.06 0 0 0-3.36 6.83 97.68 97.68 0 0 0-29.11 0A72.37 72.37 0 0 0 45.64 0a105.89 105.89 0 0 0-26.25 8.09C2.79 32.65-1.71 56.6.54 80.21a105.73 105.73 0 0 0 32.17 16.15 77.7 77.7 0 0 0 6.89-11.11 68.42 68.42 0 0 1-10.85-5.18c.91-.66 1.8-1.34 2.66-2a75.57 75.57 0 0 0 64.32 0c.87.71 1.76 1.39 2.66 2a68.68 68.68 0 0 1-10.87 5.19 77 77 0 0 0 6.89 11.1 105.25 105.25 0 0 0 32.19-16.14c2.64-27.38-4.51-51.11-18.9-72.15ZM42.45 65.69C36.18 65.69 31 60 31 53s5-12.74 11.43-12.74S54 46 53.89 53s-5.05 12.69-11.44 12.69Zm42.24 0C78.41 65.69 73.25 60 73.25 53s5-12.74 11.44-12.74S96.23 46 96.12 53s-5.04 12.69-11.43 12.69Z"
-						></path></svg
-					>
-				</a>
+		<section id="hero">			
+				<img class="logo" src={buxrailLogo.src} width="720" height="380" alt="Buxrail Homepage" />		
+			<h1 class="text-center text-4xlxl font extrabold">Travel like a <code><pre><span id="typewriter" class="cursor"></span></pre></code> Pay however you want.</h1>
+		</div>
+		<div class="launch">
+			<p id="coming-label">Coming soon to</p>
+			<div class="store-container">
+				<div class="store-badges">				
+				<img src={appstore.src} alt="App Store" />								
+				<img src={playstore.src} alt="Google Play" />				
+			</div>
+			</div>
 			</section>
-		</section>
-	</main>
-
-	<a href="https://astro.build/blog/astro-5/" id="news" class="box">
-		<svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"
-			><path
-				d="M24.667 12c1.333 1.414 2 3.192 2 5.334 0 4.62-4.934 5.7-7.334 12C18.444 28.567 18 27.456 18 26c0-4.642 6.667-7.053 6.667-14Zm-5.334-5.333c1.6 1.65 2.4 3.43 2.4 5.333 0 6.602-8.06 7.59-6.4 17.334C13.111 27.787 12 25.564 12 22.666c0-4.434 7.333-8 7.333-16Zm-6-5.333C15.111 3.555 16 5.556 16 7.333c0 8.333-11.333 10.962-5.333 22-3.488-.774-6-4-6-8 0-8.667 8.666-10 8.666-20Z"
-				fill="#111827"></path></svg
-		>
-		<h2>What's New in Astro 5.0?</h2>
-		<p>
-			From content layers to server islands, click to learn more about the new features and
-			improvements in Astro 5.0
-		</p>
-	</a>
+				<a href="#features" class="scroll-indicator">
+					<img src={arrowdown.src} height="40" />
+				</a>
+		</main>		
 </div>
 
-<style>
-	#background {
+<!-- Sección: Características -->
+<section id="features" style={`background-color: #ffffff; background-image: url(${img1.src});  background-repeat: no-repeat; 
+background-position: left center; background-size: contain;`} >
+	<img class="features-mobile-img" src={img1.src} alt="user example use metro graphic" />
+
+	<h2 class="text-center text-5xl font extrabold">The easiest way to move around the city.</h2>
+	<p class="features-intro">
+	  Skip the lines, forget about local cards and cash.<br />
+	  With BuxRail, you use your phone to pay for buses, metro, trams, and more.
+	</p>
+	<div class="features-grid">
+	  <div class="feature-item">
+		<img src={multicy.src} alt="Multi-city access icon" />
+		<h3>Multi-city access</h3>
+		<p>Use if across different tourist cities.</p>
+	  </div>
+	  <div class="feature-item">
+		<img src={cashless.src} alt="Cashless payments icon" />
+		<h3>Cashless payments</h3>
+		<p>Pay with card, crypto, or digital wallet.</p>
+	  </div>
+	  <div class="feature-item">
+		<img src={universal.src} alt="Universal language icon" />
+		<h3>Universal language</h3>
+		<p>Multilingual app.</p>
+	  </div>
+	  <div class="feature-item">
+		<img src={microcredits.src} alt="Microcredits icon" />
+		<h3>Microcredits</h3>
+		<p>Even if you’re low on funds.</p>
+	  </div>
+	</div>
+  </section>
+  
+  <!-- USE CASES SECTION -->
+	   <section id="usecases">
+		   <h2>Designed for digital nomads, backpackers, and tourists.</h2>
+		   <div class="usecases-grid">
+			   <div class="usecase-item">
+				   <img src={local.src} alt="No need to buy local transport cards icon" />
+				   <p>No need to buy local transport cards.</p>
+				</div>
+				<div class="usecase-item">
+					<img src={track.src} alt="Travel history icon" />
+					<p>Keep track of your travel history and expenses.</p>
+				</div>
+				<div class="usecase-item">
+					<img src={own.src} alt="Reload in your own currency icon" />
+					<p>Reload in your own currency.</p>
+				</div>
+				<div class="usecase-item">
+					<img src={scooter.src} alt="Compatible with bikes and scooters icon" />
+					<p>Compatible with public and alternative transport (bikes, scooters).</p>
+				</div>
+				<div class="usecase-phone">
+					<img src={phoneDemo.src} alt="App demo on phone" />
+				</div>
+			</div>
+		</section>
+	
+		<footer id="footer">
+			<div class="footer-container">
+			  <div class="footer-column">
+				<h4>Company</h4>
+				<ul>
+				  <li><a href="#">About Us</a></li>
+				  <li><a href="#">Careers</a></li>
+				  <li><a href="#">Partners</a></li>
+				  <li><a href="#">Blog</a></li>
+				</ul>
+			  </div>
+			  <div class="footer-column">
+				<h4>Support</h4>
+				<ul>
+					<li><a href="#">Contact Us</a></li>
+				  <li><a href="#">Terms of Use</a></li>
+				  <li><a href="#">Privacy Policy</a></li>				  
+				</ul>
+			  </div>
+			  <div class="footer-column">
+				<h4>Follow Us</h4>
+				<div class="social-icons">
+				  <a href="https://www.linkedin.com/company/buxrail" target="_blank" rel="noopener">
+					<img src={linkedin.src} alt="LinkedIn" />
+				  </a>
+				  <a href="https://www.instagram.com/buxrail" target="_blank" rel="noopener">
+					<img src={instagram.src} alt="Instagram" />
+				  </a>
+				  <a href="https://www.facebook.com/profile.php?id=61571942446471" target="_blank" rel="noopener">
+					<img src={facebook.src} alt="Facebook" />
+				  </a>
+				  <a href="https://www.tiktok.com/@buxrailapp" target="_blank" rel="noopener">
+					<img src={tiktok.src} alt="TikTok" />
+				  </a>
+				  <a href="https://x.com/buxrail" target="_blank" rel="noopener">
+					<img src={x.src} alt="X" />
+				  </a>
+				  <a href="https://www.youtube.com/@Buxrail" target="_blank" rel="noopener">
+					<img src={youtube.src} alt="YouTube" />
+				  </a>
+				</div>
+			  </div>
+				</div>
+			  </div>
+			</div>
+			<p class="footer-copy">© {new Date().getFullYear()} Buxrail. All rights reserved.</p>
+		  </footer>
+
+		  <script >
+			document.addEventListener('DOMContentLoaded', () => {
+			  const indicator = document.querySelector<HTMLAnchorElement>('.scroll-indicator');
+			  if (!indicator) return;
+			
+			  indicator.addEventListener('click', (e) => {
+				e.preventDefault();
+				const current = indicator.getAttribute('href')!;
+				const target = document.querySelector<HTMLElement>(current);
+				if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+			
+				const next = current === '#features' ? '#footer' : '#features';
+				indicator.setAttribute('href', next);
+			  });
+			});
+			</script>
+<script>
+	
+	(function() {
+	  const words = ['local.', 'resident.', 'nomad.', 'backpacker.', 'visitor.', 'native.'];
+	  let wordIndex = 0;
+	  let charIndex = 0;
+	  let isDeleting = false;
+	  const typeSpeed = 150;
+	
+	  function type() {
+		const typeSpan = document.getElementById('typewriter');
+		if (!typeSpan) return;
+		const currentWord = words[wordIndex];
+		const displayed = isDeleting
+		  ? currentWord.substring(0, charIndex - 1)
+		  : currentWord.substring(0, charIndex + 1);
+	
+		typeSpan.textContent = displayed;
+	
+		if (!isDeleting && charIndex < currentWord.length) {
+		  charIndex++;
+		} else if (isDeleting && charIndex > 0) {
+		  charIndex--;
+		}
+	
+		if (charIndex === currentWord.length) {
+		  isDeleting = true;
+		  setTimeout(type, 1000);
+		  return;
+		}
+	
+		if (isDeleting && charIndex === 0) {
+		  isDeleting = false;
+		  wordIndex = (wordIndex + 1) % words.length;
+		}
+	
+		setTimeout(type, isDeleting ? typeSpeed / 2 : typeSpeed);
+	  }
+	
+	  document.addEventListener('DOMContentLoaded', type);
+	  
+	})();	
+	</script>
+
+<style is:global>
+	@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+	html, body { 
+	scroll-behavior: smooth;
+	font-family: 'Nunito', sans-serif;	
+	height:100%; margin:0; padding:0; }	
+	#container { position:relative; min-height:85vh; width: 100%; display:flex; align-items:center; justify-content:center; overflow:hidden; }
+	#bg { position:absolute; inset:0; width:100vw; height:100vh; object-fit:cover; filter:blur(15px); z-index:-1; pointer-events:none; }
+	main { z-index:1; text-align:center; padding:1rem; }
+	.logo { width:100%; max-width:720px; margin-bottom:2rem; }
+	#hero h1 { color:#fff; font-size:2rem;font-weight: 700; }
+	.cursor::after { content:'|'; animation:blink .7s infinite; margin-left:2px; }
+	@keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+	#links { display:flex; gap:1rem; margin-top:1rem; }
+	a.button{ color:#fff; background:linear-gradient(83.21deg,#3245ff 0%,#bc52ee 100%); padding:.5rem 1rem; border-radius:10px;  font-weight: 700;  }
+	.launch {
+  max-width: 1200px;     
+  margin: 0 auto;        
+  padding: 2rem 1rem 0;  
+  text-align: center;
+}
+	.store-container{ background:rgba(255,255,255,0.15); backdrop-filter:blur(10px); border:1px solid rgba(255,255,255,0.3); padding:.5rem 1rem; border-radius:8px; display:inline-flex; align-items:center; }
+	.store-badges img{ width:120px; height:40px; object-fit:contain; }
+	
+
+	 #bg {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(15px);
+    z-index: -1;
+    pointer-events: none;
+  }
+	#bg {
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
 		z-index: -1;
-		filter: blur(100px);
-	}
-
+		object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    filter: blur(8px); 
+	pointer-events: none;
+	} 
+	
 	#container {
 		font-family: Inter, Roboto, 'Helvetica Neue', 'Arial Nova', 'Nimbus Sans', Arial, sans-serif;
 		height: 100%;
 	}
 
+	
 	main {
-		height: 100%;
-		display: flex;
-		justify-content: center;
-	}
+    z-index: 1;
+    text-align: center;
+    padding: 1rem;
+  }
 
-	#hero {
-		display: flex;
-		align-items: start;
-		flex-direction: column;
-		justify-content: center;
-		padding: 16px;
-	}
+	#hero .logo {
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+	object-position: center;
+	margin-bottom: 2rem; 
+  }
+
 
 	h1 {
-		font-size: 22px;
+		font-size: 48px;
 		margin-top: 0.25em;
+		color: #ffffff;
 	}
-
+	
+	.cursor::after {
+    content: '|';
+    animation: blink 0.7s infinite;
+    margin-left: 2px;
+   }
+   @keyframes blink { 0%,100% { opacity:1 } 50% { opacity:0 } }
 	#links {
 		display: flex;
 		gap: 16px;
@@ -113,23 +335,56 @@ import background from '../assets/background.svg';
 		box-shadow: none;
 	}
 
+	.launch {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  #coming-label {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 0.9rem;
+  }
+
+  .store-container {
+    background: rgb(255, 255, 255);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+
+  .store-badges {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .store-badges img {
+    width: 135px;
+    height: 40px;
+    object-fit: contain;
+  }
+
 	pre {
 		font-family:
 			ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono',
 			monospace;
-		font-weight: normal;
-		background: linear-gradient(14deg, #d83333 0%, #f041ff 100%);
+		background: linear-gradient(14deg, #ffffff 0%, #ffffff 100%);
 		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
 		background-clip: text;
+		font-weight: bold; 
 		margin: 0;
 	}
 
 	h2 {
 		margin: 0 0 1em;
-		font-weight: normal;
+		font-weight: bold;
 		color: #111827;
-		font-size: 20px;
+		/* font-size: 28px; */
 	}
 
 	p {
@@ -143,11 +398,12 @@ import background from '../assets/background.svg';
 	code {
 		display: inline-block;
 		background:
-			linear-gradient(66.77deg, #f3cddd 0%, #f5cee7 100%) padding-box,
-			linear-gradient(155deg, #d83333 0%, #f041ff 18%, #f5cee7 45%) border-box;
+			linear-gradient(66.77deg, #FC0867 0%, #FC0867 100%) padding-box,
+			linear-gradient(155deg, #FC0867 0%, #FC0867 18%, #f5cee7 45%) border-box;
 		border-radius: 8px;
-		border: 1px solid transparent;
-		padding: 6px 8px;
+		border: 2px solid transparent;
+		padding: 6px 8px
+		
 	}
 
 	.box {
@@ -170,13 +426,376 @@ import background from '../assets/background.svg';
 	#news:hover {
 		background: rgba(255, 255, 255, 0.55);
 	}
+	/**/
+	#features { position: relative; width: 100vw; margin-left: calc(-50vw + 50%); padding: 6rem 1rem; box-sizing: border-box; }
+	.features-mobile-img { display: none; }
 
-	@media screen and (max-height: 368px) {
+#features h2 { color:#292929; font-size:2.5rem; margin-bottom:.5rem; text-align:center; font-weight: 700; }
+.features-intro { color:#4b5563; text-align:center; margin-bottom:2.2rem;  }
+.feature-spacer {
+  width: 100%;
+  height: 150px;
+  background-color: #bc52ee;
+  position: fixed;
+}
+.features-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:2rem; max-width:1000px; margin:0 auto; left: 40%; }
+.feature-item { text-align:center; }
+.feature-item img{ width:48px; height:48px; margin-bottom:.75rem; }
+.feature-item h3{ font-size:1.4rem; margin:0.5rem 0 0.25rem; color:#292929;  font-weight: 700;  }
+.feature-item p{ color:#4b5563; font-size:.9rem; margin:0; }
+
+
+.scroll-indicator {
+	position: fixed;
+    bottom: 2rem;
+	right: 2rem;  
+    left: auto;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 0.5rem; 
+    background: rgba(0,0,0,0.1);
+    padding: 1rem 1rem;
+    border-radius: 999px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    z-index: 999;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .scroll-indicator .arrow-icon {
+	pointer-events: none;
+	bottom: 5rem;
+    margin-top: 0.9rem;
+    animation: bounce 2s infinite;
+  }
+
+   #usecases {
+ 
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: start;
+    gap: 2rem;
+    background: #F3FBFF;
+    padding: 3rem 1rem;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    box-sizing: border-box;
+}
+#usecases h2,
+.usecases-grid {
+    grid-column: 1;
+}
+
+.usecase-phone {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 180px;
+    margin: 0;
+}
+#usecases h2 {
+    color: #111827;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+.usecases-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 1fr)) minmax(120px, auto);
+    grid-template-rows: repeat(2, auto);
+    align-items: start;
+    gap: 1rem; /* más cerca */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+.usecase-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+.usecase-item img {
+    width: 32px;
+    height: 32px;
+}
+.usecase-item p {
+    color: #4b5563;
+    font-size: 1rem;
+    margin: 0;
+}
+.usecase-phone {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 180px; 
+    margin: 0;
+}
+.usecase-phone img {
+    width: 100%;
+    height: auto;
+}
+
+#usecases h2 {
+  color: #111827;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+.usecases-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) auto;
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 8rem;
+  box-sizing: border-box;
+  justify-self: center;
+  align-items: center;
+}
+.usecase-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.usecase-item img {
+  width: 48px;
+  height: 48px;
+}
+.usecase-item p {
+  color: #4b5563;
+  font-size: 1rem;
+  margin: 0;
+}
+.usecase-phone {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+}
+#footer {
+transform: translateX(-50%);
+  width: 98.3vw !important;    
+  max-width: none !important; 
+  margin: 0 !important;     
+  position: relative;
+  left: 50%;
+  background-color: #292929;
+  color: #ffffff;
+  padding: 2rem 1rem;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+}
+.footer-column h4 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-column li {
+  margin-bottom: 0.5rem;
+}
+.footer-column a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-column a:hover {
+  text-decoration: underline;
+}
+#footer .social-icons a img {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+
+.social-icons a {
+display: inline-block;
+margin-right: 0.5rem;
+}
+.footer-copy {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+}
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+    40% { transform: translateX(-50%) translateY(5px); }
+    60% { transform: translateX(-50%) translateY(3px); }
+  }
+/* @media screen and (max-height: 368px) {
 		#news {
 			display: none;
 		}
-	}
+	} */
+	@media (max-width: 600px) {
+  .logo { max-width: 90%; }
 
+  #features { background: #fff; background-image: none !important; padding-top: 1rem; }
+  .features-mobile-img { display: block; max-width: 160px; margin: 0 auto 1rem; }
+  #features h2 { margin-top: 0; }
+  .features-grid { gap: 1rem; }
+  .feature-item img { width: 40px; height: 40px; }
+
+  #container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		#hero {
+			display: block;
+			padding-top: 10%;
+		}
+
+		#links {
+			flex-wrap: wrap;
+		}
+
+		#links a.button {
+			padding: 14px 18px;
+		}
+
+		#news {
+			right: 16px;
+			left: 16px;
+			bottom: 2.5rem;
+			max-width: 100%;
+		}
+
+		h1 {
+			line-height: 1.5;
+		}
+		.scroll-indicator {
+      font-size: 0.75rem;
+      padding: 0.7rem 0.5rem;	  
+      bottom: 1rem;
+      right: 1rem;
+    }
+    .scroll-indicator img {
+      height: 40px;
+    }
+
+  .logo {
+    max-width: 70%;
+    margin: 1rem auto;
+  }
+
+  .features-mobile-img {
+    max-width: 100px;
+    margin-bottom: 1rem;
+  }
+  .features-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+    padding: 0 0.5rem !important;
+  }
+
+  /* USECASES */
+  .usecases-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+    padding: 0 0.5rem !important;
+  }
+  .usecase-phone {
+    max-width: 250px !important;
+    /* margin: 0rem auto !important; */
+	height: auto !important;
+  }
+
+  /* FOOTER */
+  #footer {
+    padding: 0.5rem 0.5rem !important;
+    font-size: 0.75rem !important;
+	justify-content: center !important;
+	text-align: center !important;
+	margin: 0 auto !important;
+	width: 100% !important;
+	left: auto !important;
+	transform: none !important;
+  }
+  .footer-container {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 1380px) {
+	#features { background: #fff; background-image: none !important; padding-top: 1rem; }
+	.features-mobile-img {  display: block !important;
+    width: 35% !important;
+    max-width: none !important;
+    height: auto !important;
+    margin: 0 auto 1rem !important;}
+	  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* @media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+} */
+@media screen and (max-width: 768px) {
+  /* tus reglas móviles aquí */
+  #container {
+    display: flex;
+    flex-direction: column;
+  }
+  /* … resto de tu CSS … */
+  .usecases-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .usecase-phone {
+    grid-column: auto;
+    order: -1;
+    margin-bottom: 2rem;
+    justify-self: center;
+    width: 100%;
+    max-width: 200px;
+  }
+  .usecase-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .usecase-item p {
+    overflow: visible;
+    margin: 0;
+  }
+  #footer {
+    width: 100% !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 0 auto !important;
+    padding: 1rem 0.5rem; /* puedes ajustar padding también */
+  }
 	@media screen and (max-width: 768px) {
 		#container {
 			display: flex;
@@ -206,5 +825,52 @@ import background from '../assets/background.svg';
 		h1 {
 			line-height: 1.5;
 		}
-	}
+		.scroll-indicator {
+      font-size: 0.75rem;
+      padding: 0.7rem 0.5rem;	  
+      bottom: 1rem;
+      right: 1rem;
+    }
+    .scroll-indicator img {
+      height: 40px;
+    }
+
+	.usecases-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;	
+    gap: 1rem;
+  }
+  .usecase-phone {
+    grid-column: auto;
+    grid-row: auto;
+    order: -1;
+    margin-bottom: 2rem;
+    justify-self: center;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .usecase-phone img {
+    max-width: 250px !important;
+    height: auto !important;
+  }
+  .usecase-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .usecase-item p {
+    display: block;       
+    overflow: visible;
+    margin: 0;
+  }
+  #footer {
+    width: 97.5% !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 0 auto !important;
+  }
+	}}
+	
 </style>

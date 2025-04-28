@@ -5,10 +5,12 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Buxrail | Simplify your travel</title>
 	</head>
 	<body>
-		<slot />
+		<div>
+			<slot />
+		</div>
 	</body>
 </html>
 
@@ -17,6 +19,11 @@
 	body {
 		margin: 0;
 		width: 100%;
-		height: 100%;
+		height: 100%
+		@apply grid place-content-center p-20;
+	}
+
+	body > div {
+		@apply grid place-content-center;
 	}
 </style>
