@@ -656,14 +656,22 @@ margin-right: 0.5rem;
 	} */
 	@media (max-width: 600px) {
   .logo { max-width: 90%; }
-
-  #features { background: #fff; background-image: none !important; padding-top: 1rem; }
+  html, body {
+    overflow-x: hidden;
+  }
+  #features { background: #fff; background-image: none !important;   width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 1rem !important;   
+    padding-right: 1rem !important;
+    box-sizing: border-box !important;
+   }
   .features-mobile-img { display: block; max-width: 160px; margin: 0 auto 1rem; }
   #features h2 { margin-top: 0; }
   .features-grid { gap: 1rem; }
   .feature-item img { width: 40px; height: 40px; }
 
-  #container {
+	#container {
 			display: flex;
 			flex-direction: column;
 		}
@@ -689,16 +697,16 @@ margin-right: 0.5rem;
 		}
 
 		h1 {
-			line-height: 1.5;
+		line-height: 1.5;
 		}
-		.scroll-indicator {
-      font-size: 0.75rem;
-      padding: 0.7rem 0.5rem;	  
-      bottom: 1rem;
-      right: 1rem;
+	.scroll-indicator {
+	font-size: 0.75rem;
+    padding: 0.7rem 0.5rem;	  
+    bottom: 1rem;
+    right: 1rem;
     }
     .scroll-indicator img {
-      height: 40px;
+    height: 40px;
     }
 
   .logo {
@@ -717,6 +725,14 @@ margin-right: 0.5rem;
   }
 
   /* USECASES */
+  .usecases{
+	width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 1rem !important;   
+    padding-right: 1rem !important;
+    box-sizing: border-box !important;
+  }
   .usecases-grid {
     grid-template-columns: 1fr !important;
     gap: 0.75rem !important;
@@ -724,7 +740,6 @@ margin-right: 0.5rem;
   }
   .usecase-phone {
     max-width: 250px !important;
-    /* margin: 0rem auto !important; */
 	height: auto !important;
   }
 
@@ -738,13 +753,16 @@ margin-right: 0.5rem;
 	width: 100% !important;
 	left: auto !important;
 	transform: none !important;
-  }
-  .footer-container {
+  } 
+   .footer-container {
     padding: 0 !important;
   }
 }
 
 @media (max-width: 1380px) {
+	html, body {
+    overflow-x: hidden;
+  }
 	#features { background: #fff; background-image: none !important; padding-top: 1rem; }
 	.features-mobile-img {  display: block !important;
     width: 35% !important;
