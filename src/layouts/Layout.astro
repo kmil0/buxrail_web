@@ -1,8 +1,36 @@
+---
+import { SEO } from "astro-seo";
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+        <meta name="viewport" content="width=device-width" />
+		<SEO title="Buxrail | Simplify your travel" description="BuxRail is an app streamlines your journeys: a global payment app for mass transit, compatible with QR codes, NFC contactless payments, and cryptocurrencies." 		
+		openGraph={{
+			basic: {
+				title: "Buxrail | Simplify your travel",
+				url: 'https://buxrail.com',
+				image: "/header.jpg",
+				type: "website",				
+			},
+			article : {
+            authors: ['Buxrail'],
+			},
+			image: {
+            url: '/header.jpg',
+            alt: 'Buxrail header image',
+            width: 1200,
+            height: 630,
+        },  
+		}}		
+		twitter={{
+			card: "summary_large_image",
+			title: "Buxrail | Simplify your travel",
+			description: "BuxRail is an app streamlines your journeys: a global payment app for mass transit, compatible with QR codes, NFC contactless payments, and cryptocurrencies.",
+			image: "/header.jpg",
+		}} />				
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Buxrail | Simplify your travel</title>

@@ -11,6 +11,10 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",
     "astro": "^5.7.5",
+    "astro-seo": "^0.8.4",
     "tailwindcss": "^4.1.4"
+  },
+  "devDependencies": {
+    "@astrojs/sitemap": "^3.3.1"
   }
 }
