@@ -1,5 +1,6 @@
 ---
 import { SEO } from "astro-seo";
+const SITE = 'https://www.buxrail.com';
 ---
 
 <!doctype html>
@@ -7,12 +8,13 @@ import { SEO } from "astro-seo";
 	<head>
 		<meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
+		<meta property="og:image" content="/header.jpg">
 		<SEO title="Buxrail | Simplify your travel" description="BuxRail is an app streamlines your journeys: a global payment app for mass transit, compatible with QR codes, NFC contactless payments, and cryptocurrencies." 		
 		openGraph={{
 			basic: {
 				title: "Buxrail | Simplify your travel",
-				url: 'https://buxrail.com',
-				image: "/header.jpg",
+				url: SITE,
+				image: `${SITE}/header.jpg`,
 				type: "website",				
 			},
 			article : {
@@ -20,9 +22,7 @@ import { SEO } from "astro-seo";
 			},
 			image: {
             url: '/header.jpg',
-            alt: 'Buxrail header image',
-            width: 1200,
-            height: 630,
+            alt: 'Buxrail header image',            
         },  
 		}}		
 		twitter={{

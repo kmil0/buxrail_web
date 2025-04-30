@@ -1,0 +1,210 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SEO } from "astro-seo";
+import logo from "../assets/logo.jpg";
+import facebook from '../assets/facebook.svg';
+import instagram from '../assets/instagram.svg';
+import linkedin from '../assets/linkedin.svg';
+import tiktok from '../assets/tiktok.svg';		
+import x from '../assets/x.svg';
+import youtube from '../assets/youtube.svg';
+
+const title = "About Us - Buxrail";
+const description =
+  "Learn about Buxrail, our mission to simplify mass transit payments worldwide with cutting-edge fintech solutions.";
+const url = import.meta.env.SITE + "/about";
+const image = "/about-og.png";
+---
+
+<style is="global">
+  @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+  body {
+    margin: 0;
+    background-color: #292929;
+    color: #ffffff;
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+
+  }
+  .site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: transparent;
+    z-index: 1000;
+  }
+
+  .site-header .logo-link {
+    display: inline-block;
+  }
+
+  .site-header .logo {
+    max-height: 80px;
+    cursor: pointer;
+  }
+  #footer {
+transform: translateX(-50%);
+  width: 98.3vw !important;    
+  max-width: none !important; 
+  margin: 0 !important;     
+  position: relative;
+  left: 50%;
+  background-color: #292929;
+  color: #ffffff;
+  padding: 2rem 1rem;
+}
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+}
+.footer-column h4 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-column li {
+  margin-bottom: 0.5rem;
+}
+.footer-column a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.footer-column a:hover {
+  text-decoration: underline;
+}
+#footer .social-icons a img {
+  width: 32px;
+  height: 32px;
+  margin-right: 0.4rem;
+  vertical-align: middle;
+}
+@media (max-width: 600px) {
+    #footer {
+    padding: 0.5rem 0.5rem !important;
+    font-size: 0.75rem !important;
+	justify-content: center !important;
+	text-align: center !important;
+	margin: 0 auto !important;
+	width: 100% !important;
+	left: auto !important;
+	transform: none !important;
+  } 
+   .footer-container {
+    padding: 0 !important;
+  }
+}
+</style>
+
+  <Layout title={title}>
+    <header class="site-header">
+        <a href="/" class="logo-link">
+          <img src={logo.src} alt="BuxRail Homepage" class="logo" loading="eager" />
+        </a>
+      </header>
+    <section
+      style="
+      padding: 4rem 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    "
+    >
+      <h1 style="font-size: 4.5rem; margin-bottom: 1rem; font-weight: 700;">
+        Welcome to Buxrail
+      </h1>
+      <p
+        style="font-size: 1.2rem; line-height: 1.6; color: #d0d4dd; margin-bottom: 2rem;text-align: center;">
+        We created Buxrail because we believe public transportation must be part
+        of the digital transformation shaping Smart Cities. Today's travelers
+        expect simplicity, cashless experiences, and seamless mobility across
+        borders, but public transport remains fragmented and outdated. In every
+        new city, users must purchase a different transport card, find physical
+        locations to recharge often only accepting local cash and any unused
+        balance remains locked to that city, leading to lost money and wasted
+        time. These barriers language, currency, infrastructure do not belong in
+        the future of global mobility. We are solving a critical gap: making
+        urban public transport truly accessible and intuitive for international
+        travelers, expats, and even locals who seek digital-first experiences.
+      </p>
+
+      <p
+        style="font-size: 1.2rem; line-height: 1.6; color: #d0d4dd; margin-bottom: 2rem;  text-align: center;">
+        Buxrail offers a new paradigm: one virtual card in your phone to access
+        transportation in multiple cities, with a single top-up in local
+        currencies, foreign currencies, or even cryptocurrencies. Unlike
+        traditional transport cards, we eliminate the need for physical
+        reloading points, eliminate trapped balances, and ensure users can move
+        seamlessly with multilingual, mobile-first technology. Our solution
+        doesn't just modernize payments it aligns with the goals of Smart Cities
+        by promoting inclusivity, sustainability, and digital innovation in
+        public infrastructure. While others focus on isolated systems, Buxrail
+        builds a connected, borderless mobility network designed for the global
+        generation.
+      </p>
+    </section>
+    <footer id="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Support</h4>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Privacy Policy</a></li>				  
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/company/buxrail" target="_blank" rel="noopener">
+                <img src={linkedin.src} alt="LinkedIn" />
+              </a>
+              <a href="https://www.instagram.com/buxrail" target="_blank" rel="noopener">
+                <img src={instagram.src} alt="Instagram" />
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61571942446471" target="_blank" rel="noopener">
+                <img src={facebook.src} alt="Facebook" />
+              </a>
+              <a href="https://www.tiktok.com/@buxrailapp" target="_blank" rel="noopener">
+                <img src={tiktok.src} alt="TikTok" />
+              </a>
+              <a href="https://x.com/buxrail" target="_blank" rel="noopener">
+                <img src={x.src} alt="X" />
+              </a>
+              <a href="https://www.youtube.com/@Buxrail" target="_blank" rel="noopener">
+                <img src={youtube.src} alt="YouTube" />
+              </a>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+        <p class="footer-copy"> © {new Date().getFullYear()} Buxrail. All rights reserved.</p>
+      </footer>
+
+  </Layout>
