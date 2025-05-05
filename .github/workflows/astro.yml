@@ -16,6 +16,7 @@ permissions:
 
 env:
   PUBLIC_CLARITY_ID: ${{ secrets.PUBLIC_CLARITY_ID }}
+  PUBLIC_GA_ID: ${{ secrets.PUBLIC_GA_ID }}
 
 jobs:
   build:
