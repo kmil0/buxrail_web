@@ -48,14 +48,14 @@ const gaId = import.meta.env.PUBLIC_GA_ID;
 		)}		
 		<!-- Google Analytics -->
 		<script async
-		src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+		src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA_ID}`}
 		></script>
 		<script is:inline>
 			{`
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){ dataLayer.push(arguments); }
 			gtag('js', new Date());
-			gtag('config', '${gaId}', { send_page_view: true });
+			gtag('config', '${import.meta.env.PUBLIC_GA_ID}', { send_page_view: true });
 			`}
 		</script>
 	</head>
@@ -63,7 +63,7 @@ const gaId = import.meta.env.PUBLIC_GA_ID;
 		<div>
 			<noscript>
 				<iframe
-					src={`https://www.googletagmanager.com/ns.html?id=${gaId}`}
+					src={`https://www.googletagmanager.com/ns.html?id=${import.meta.env.PUBLIC_GA_ID}`}
 					height="0" width="0" style="display:none;visibility:hidden"
 				></iframe>
 			</noscript>
