@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from "@astrojs/sitemap";
+import clarity from '@kbyte-tech/astro-clarity';
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,6 +9,10 @@ export default defineConfig({
   base: "/", 
   integrations: [
     sitemap(),  
+    clarity({
+      enabled: true,
+      projectId: import.meta.env.PUBLIC_CLARITY_ID,
+    }),
   ],
   
 });

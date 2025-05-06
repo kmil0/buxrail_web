@@ -1,7 +1,6 @@
 ---
 import { SEO } from "astro-seo";
 const SITE = "https://www.buxrail.com";
-const clarityId = import.meta.env.PUBLIC_CLARITY_ID;
 ---
 
 <!doctype html>
@@ -32,21 +31,6 @@ const clarityId = import.meta.env.PUBLIC_CLARITY_ID;
     />
 
     <link rel="icon" href="/favicon.svg" />
-
-	{clarityId && (
-		<script is:inline>
-		  {`
-			(function(c,l,a,r,i,t,y){
-			  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-			  t=l.createElement(r); t.async=1;
-			  // Aquí Astro ya habrá sustituido ${clarityId}
-			  t.src="https://www.clarity.ms/tag/${clarityId}";
-			  y=l.getElementsByTagName(r)[0];
-			  y.parentNode.insertBefore(t,y);
-			})(window, document, 'clarity', 'script', '${clarityId}');
-		  `}
-		</script>
-	  )}
   </head>
   <body>
     <slot />
