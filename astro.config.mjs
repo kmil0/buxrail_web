@@ -9,7 +9,7 @@ export default defineConfig({
     sitemap(),  
     clarity({
       enabled: true,
-      projectId: 'reuil5sodr',      
+      projectId:"reuil5sodr",      
     }),
   ],
   
